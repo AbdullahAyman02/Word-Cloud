@@ -9,7 +9,7 @@ import ipywidgets
 
 
 def calculate_frequencies(string):
-    # Here is a list of punctuations and uninteresting words you can use to process your text
+    # Here is a list of punctuations and uninteresting words you can use to process your text (you can add more words as you see fit).
     punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
     uninteresting_words = ["the", "a", "to", "if", "is", "it", "in", "of", "and", "or", "an", "as", "i", "me", "my",
                            "we", "our", "ours", "you", "your", "yours", "he", "she", "him", "his", "her", "hers", "its",
@@ -21,7 +21,6 @@ def calculate_frequencies(string):
                            "all", "any", "both", "each", "few", "more", "some", "such", "no", "nor", "too", "very",
                            "can", "will", "just"]
 
-    # LEARNER CODE START HERE
     string = string.translate({ord(letter): None for letter in punctuations})
     words = string.split()
     frequencies = {}
@@ -38,7 +37,7 @@ def calculate_frequencies(string):
     cloud.to_file("image.jpg")
     return cloud.to_array()
 
-
+#The following path should be updated to where the text file exists on your machine locally
 with open("C:/Users/Abdullah/Desktop/Pride and Prejudice by Jane Austen (1555).txt", 'r', encoding='utf8') as f:
     file_contents = f.read()
 myimage = calculate_frequencies(file_contents)
