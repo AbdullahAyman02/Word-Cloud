@@ -5,6 +5,8 @@ Important Notes:
 -The text should be ready in a text file stored locally on your computer, and include the path to the text file in the main.py file, an image will be generated in the folder that contains the project.
 
 Examples:
+
+
 ![image](https://user-images.githubusercontent.com/102327084/190451680-dd64947d-ddd1-40fd-a7cd-7e45d622b408.png)
 
 
